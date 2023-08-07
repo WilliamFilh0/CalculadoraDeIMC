@@ -70,6 +70,14 @@ form input {
   border-radius: 0.4rem;
 }
 
+form input:focus{
+  outline: 2px solid var(--ot-input);
+}
+
+form input::placeholder{
+  color: var(--tt-placeholder);
+}
+
 .input-wrapper + .input-wrapper{
   margin-top: 1.6rem;
 }
