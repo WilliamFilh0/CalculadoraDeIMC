@@ -120,7 +120,7 @@ form button:hover {
 }
 
 /* modal */
-.modal-wrapper.open{
+.modal-wrapper.open {
   opacity: 1;
   visibility: visible;
 }
@@ -137,11 +137,11 @@ form button:hover {
   visibility: hidden;
 }
 
-.modal{
+.modal {
   position: relative;
 }
 
-.modal-button{
+.modal-button {
   background: none;
   border: none;
 
@@ -153,6 +153,29 @@ form button:hover {
   transition: transform .3s;
 }
 
-.modal button:hover{
+.modal button:hover {
   transform: scale(1.1);
+}
+
+/*Alert error */
+.alert-error.open{
+  visibility: visible;
+  opacity: 1;
+}
+
+.alert-error{
+  position: absolute;
+  background-color: var(--bg-error);
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--tt-error);
+  padding: .8rem 0;
+  font-weight: bold;
+
+  visibility: hidden;
+  opacity: 0;
+  
+ 
 }
