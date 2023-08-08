@@ -7,6 +7,8 @@ const form = document.querySelector('form')
 const inputWeight = document.querySelector('#weight')
 const inputHeight = document.querySelector('#height')
 
+inputWeight.oninput = () => AlertError.close()
+inputWeight.oninput = () => AlertError.close()
 
 form.onsubmit = event => {
   event.preventDefault()
@@ -34,3 +36,4 @@ function displayResultMessage(result){
   Modal.message.innerText = message
   Modal.open()
 }
+
